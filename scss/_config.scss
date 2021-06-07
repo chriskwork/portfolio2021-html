@@ -30,6 +30,10 @@ $text-c: center;
 /* link active */
 $active: darken($primary, 10%);
 
+/* font size */
+$font-sm: 0.875rem;
+$font-m: 1rem;
+
 // reset style
 * {
   margin: 0;
@@ -62,8 +66,4 @@ a {
 h1 {
   font-size: 1.25rem;
   color: $text;
-}
-
-section {
-  margin-bottom: 6.25rem;
 }

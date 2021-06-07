@@ -4,6 +4,7 @@
 /* responsive containers */
 /* padding and margin */
 /* link active */
+/* font size */
 * {
   margin: 0;
   padding: 0;
@@ -32,10 +33,6 @@ a {
 h1 {
   font-size: 1.25rem;
   color: #9ca8c8;
-}
-
-section {
-  margin-bottom: 6.25rem;
 }
 
 header {
@@ -151,7 +148,7 @@ header {
 .intro {
   width: 100%;
   max-width: 1256px;
-  padding: 6.25rem 5.25rem 8.25rem;
+  padding: 6.25rem 1.25rem 8.25rem 1.25rem;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -277,6 +274,62 @@ header {
   font-size: 1.25rem;
 }
 
+.section-title .section-subtitle span {
+  font-weight: 700;
+  color: #ef6e6e;
+}
+
 #about {
-  border: 1px solid yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #9ca8c8;
+  font-size: 0.875rem;
+  max-width: 1256px;
+  margin: 0 auto 6.25rem auto;
+  position: relative;
+}
+
+#about .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  width: 80%;
+}
+
+#about .profile img {
+  width: 8rem;
+  border-radius: 50%;
+}
+
+.deco-image {
+  opacity: 0.35;
+  z-index: -1;
+}
+
+.deco-image-wave {
+  position: absolute;
+  width: 10rem;
+  top: 0;
+  left: 0;
+}
+
+.deco-image-dot {
+  position: absolute;
+  width: 5rem;
+  bottom: 0;
+  right: 0;
 }
