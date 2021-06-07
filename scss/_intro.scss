@@ -1,7 +1,7 @@
 .intro {
   width: 100%;
   max-width: $desktop-width;
-  padding: 6.25rem 5.25rem;
+  padding: 6.25rem 5.25rem 8.25rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -26,9 +26,12 @@
     }
 
     .action-btn {
+      display: inline-block;
       border: 1px solid $text;
-      padding: 1.2rem 2rem;
+      padding: 1rem 2rem;
       border-radius: 2rem;
+      margin-top: 2rem;
+      transition: all $transition;
 
       &:hover {
         background-color: $primary;
@@ -51,11 +54,11 @@
 @media screen and (max-width: $tablet-width) {
   .intro {
     flex-direction: column-reverse;
-    padding: 3.25rem 0;
+    padding: 2.25rem 0 7.25rem 0;
 
     img {
       width: 70%;
-      margin: 3rem;
+      margin: 4rem;
     }
 
     .intro__textBox {

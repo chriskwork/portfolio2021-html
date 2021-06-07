@@ -25,6 +25,7 @@ $mobile-width: 760px;
 $padding: 0 1.25rem;
 $margin-c: 0 auto;
 $margin-c-b: 0 auto 6.25rem auto;
+$text-c: center;
 
 /* link active */
 $active: darken($primary, 10%);
@@ -56,4 +57,13 @@ body {
 a {
   text-decoration: none;
   color: $text;
+}
+
+h1 {
+  font-size: 1.25rem;
+  color: $text;
+}
+
+section {
+  margin-bottom: 6.25rem;
 }
