@@ -3,6 +3,7 @@
 /* test border */
 /* responsive containers */
 /* padding and margin */
+/* link active */
 * {
   margin: 0;
   padding: 0;
@@ -106,6 +107,7 @@ header {
     width: 0;
     height: 0;
     padding: 6.25rem 0;
+    pointer-events: none;
   }
   .mobile-nav .feather-x {
     position: absolute;
@@ -126,6 +128,7 @@ header {
     position: fixed;
     top: 0;
     right: 0;
+    pointer-events: all;
   }
   .mobile-nav.opened .feather-x {
     position: absolute;
@@ -172,6 +175,22 @@ header {
   font-weight: 700;
   color: #ef6e6e;
   margin-top: -1rem;
+}
+
+.intro .intro__textBox .action-btn {
+  border: 1px solid #9ca8c8;
+  padding: 1.2rem 2rem;
+  border-radius: 2rem;
+}
+
+.intro .intro__textBox .action-btn:hover {
+  background-color: #ef6e6e;
+  border: 1px solid #ef6e6e;
+  color: #fff;
+}
+
+.intro .intro__textBox .action-btn:active {
+  background-color: #ea4040;
 }
 
 .intro img {

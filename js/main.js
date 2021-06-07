@@ -20,6 +20,9 @@ function mobileMenuClose() {
 }
 
 if (mobileMenuOpenBtn) {
+  menuLinks.forEach((link) => {
+    link.style.opacity = 0
+  })
   mobileMenuOpenBtn.addEventListener('click', mobileMenuOpen)
 }
 

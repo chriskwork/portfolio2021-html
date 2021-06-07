@@ -24,6 +24,22 @@
       color: $primary;
       margin-top: -1rem;
     }
+
+    .action-btn {
+      border: 1px solid $text;
+      padding: 1.2rem 2rem;
+      border-radius: 2rem;
+
+      &:hover {
+        background-color: $primary;
+        border: 1px solid $primary;
+        color: $title;
+      }
+
+      &:active {
+        background-color: $active;
+      }
+    }
   }
 
   img {
