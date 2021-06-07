@@ -1,0 +1,56 @@
+// variables
+
+/* COLORS */
+$bg: #0b132d;
+$title: #fff;
+$text: #9ca8c8;
+$text-dark: #6b748b;
+$primary: #ef6e6e;
+$section-dark: #080e21;
+$card: #151c34;
+
+/* transition delay */
+$transition: 250ms;
+
+/* test border */
+$border: 1px solid yellow;
+
+/* responsive containers */
+$desktop-width: 1256px;
+$tablet-big-width: 1024px;
+$tablet-width: 960px;
+$mobile-width: 760px;
+
+/* padding and margin */
+$padding: 0 1.25rem;
+$margin-c: 0 auto;
+$margin-c-b: 0 auto 6.25rem auto;
+
+// reset style
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 100%;
+
+  // @media (max-width: $tablet-big-width) {
+  //   font-size: 90%;
+  // }
+}
+
+body {
+  background-color: $bg;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: $text;
+}

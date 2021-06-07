@@ -1,0 +1,96 @@
+header {
+  max-width: $desktop-width;
+  position: sticky;
+  top: 0;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: $margin-c;
+  padding: $padding;
+  background-color: $bg;
+}
+
+#logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: $primary;
+
+  span {
+    color: $title;
+  }
+}
+
+.desktop-nav a {
+  margin-left: 1.875rem;
+  transition: color $transition;
+  padding: 1rem;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+.feather-menu,
+.mobile-nav {
+  display: none;
+}
+
+@media screen and (max-width: $tablet-width) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .feather-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $text;
+
+    transition: all $transition;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    padding: 6.25rem 0;
+
+    .feather-x {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.25rem;
+      cursor: pointer;
+      display: none;
+    }
+
+    a.mobile-link {
+      color: $bg;
+      width: 100%;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    &.opened {
+      width: 18.75rem;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: 0;
+
+      & .feather-x {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.25rem;
+        cursor: pointer;
+        display: block;
+      }
+    }
+  }
+}
