@@ -19,6 +19,11 @@
       width: 8rem;
       border-radius: 50%;
     }
+
+    @media screen and (max-width: $mobile-width) {
+      flex-direction: column;
+      text-align: $text-c;
+    }
   }
 }
 
