@@ -15,12 +15,17 @@
     text-align: $text-c;
 
     &-icon {
-      width: 5rem;
       height: 6rem;
 
-      @media screen and (max-width: $tablet-big-width) {
+      &.size-m {
+        width: 4.2rem;
+      }
+
+      &.size-sm {
         width: 4rem;
-        height: 5rem;
+      }
+
+      @media screen and (max-width: $tablet-big-width) {
       }
 
       img {
