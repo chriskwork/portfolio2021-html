@@ -1,15 +1,19 @@
-header {
-  max-width: $desktop-width;
+.header-wrapper {
+  width: 100%;
+  background-color: $bg;
+  z-index: 98;
   position: sticky;
   top: 0;
+}
+
+header {
+  max-width: $desktop-width;
   height: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: $margin-c;
   padding: $padding;
-  background-color: $bg;
-  z-index: 98;
 }
 
 #logo {

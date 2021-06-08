@@ -8,7 +8,7 @@ function mobileMenuOpen() {
   mobileMenu.classList.add('opened')
   menuLinks.forEach((link, i) => {
     link.style.opacity = 1
-    link.style.transition = `opacity ${(i / 4) * 1.5}s`
+    link.style.transition = `opacity ${i + 0.25}s`
   })
 }
 

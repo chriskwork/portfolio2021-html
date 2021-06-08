@@ -11,66 +11,71 @@
     />
     <link rel="stylesheet" href="./css/main.css" />
     <script defer src="./js/main.js"></script>
+    <script defer src="./js/portfolio-data.js"></script>
+    <script defer src="./js/portfolio.js"></script>
 
     <title>Yohan Kim | Portfolio Page</title>
   </head>
   <body>
     <!-- ######## HEADER ######## -->
-    <header>
-      <div id="logo"><span>.</span>KIM</div>
-      <nav class="desktop-nav">
-        <a class="non-active" href="#about">About Me</a>
-        <a class="non-active" href="#what-i-do">What I Do</a>
-        <a class="non-active" href="#portfolio">Portfolio</a>
-        <a class="non-active" href="#contact">Contact</a>
+
+    <div class="header-wrapper">
+      <header>
+        <div id="logo"><span>.</span>KIM</div>
+        <nav class="desktop-nav">
+          <a class="non-active" href="#about">About Me</a>
+          <a class="non-active" href="#what-i-do">What I Do</a>
+          <a class="non-active" href="#portfolio">Portfolio</a>
+          <a class="non-active" href="#contact">Contact</a>
+        </nav>
+
+        <!-- hamburger menu bars -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#9ca8c8"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-menu"
+          id="mobile-menu-open"
+        >
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </header>
+
+      <!-- mobile menu when clicked hamburger bars -->
+      <nav class="mobile-nav" id="mobile-nav">
+        <!-- close button -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="feather feather-x"
+          id="mobile-menu-close"
+        >
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+
+        <!-- mobile nav menu -->
+        <a class="non-active mobile-link" href="#about">About Me</a>
+        <a class="non-active mobile-link" href="#what-i-do">What I Do</a>
+        <a class="non-active mobile-link" href="#portfolio">Portfolio</a>
+        <a class="non-active mobile-link" href="#contact">Contact</a>
       </nav>
-
-      <!-- hamburger menu bars -->
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="#9ca8c8"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="feather feather-menu"
-        id="mobile-menu-open"
-      >
-        <line x1="3" y1="12" x2="21" y2="12"></line>
-        <line x1="3" y1="6" x2="21" y2="6"></line>
-        <line x1="3" y1="18" x2="21" y2="18"></line>
-      </svg>
-    </header>
-
-    <!-- mobile menu when clicked hamburger bars -->
-    <nav class="mobile-nav" id="mobile-nav">
-      <!-- close button -->
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="28"
-        height="28"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="1"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="feather feather-x"
-        id="mobile-menu-close"
-      >
-        <line x1="18" y1="6" x2="6" y2="18"></line>
-        <line x1="6" y1="6" x2="18" y2="18"></line>
-      </svg>
-
-      <!-- mobile nav menu -->
-      <a class="non-active mobile-link" href="#about">About Me</a>
-      <a class="non-active mobile-link" href="#what-i-do">What I Do</a>
-      <a class="non-active mobile-link" href="#portfolio">Portfolio</a>
-      <a class="non-active mobile-link" href="#contact">Contact</a>
-    </nav>
+    </div>
 
     <!-- ######## MAIN - intro ######## -->
     <div class="intro">
@@ -148,7 +153,7 @@
     <section id="what-i-do">
       <div class="grid-container">
         <div class="card">
-          <div class="card-icon">
+          <div class="card-icon size-sm">
             <img src="./img/whatido/monitor.svg" alt="ui ux design icon" />
           </div>
           <p class="card-title">User Interface Design</p>
@@ -158,7 +163,7 @@
           </p>
         </div>
         <div class="card">
-          <div class="card-icon">
+          <div class="card-icon size-m">
             <img src="./img/whatido/code.svg" alt="web development icon" />
           </div>
           <p class="card-title">Web Development</p>
@@ -168,7 +173,7 @@
           </p>
         </div>
         <div class="card">
-          <div class="card-icon">
+          <div class="card-icon size-sm">
             <img src="./img/whatido/layout.svg" alt="editorial design icon" />
           </div>
           <p class="card-title">Editorial Design</p>
@@ -178,7 +183,7 @@
           </p>
         </div>
         <div class="card">
-          <div class="card-icon">
+          <div class="card-icon size-sm">
             <img
               src="./img/whatido/thumbs-up.svg"
               alt="online marketing icon"
@@ -206,49 +211,15 @@
     <section id="portfolio">
       <!-- tab button container -->
       <div class="portfolio-tab-container" id="portfolio-tab-container">
-        <div class="tab-item">UI Design</div>
-        <div class="tab-item">Web Design</div>
-        <div class="tab-item">Edit. Design</div>
-        <div class="tab-item">See More</div>
+        <div class="tab-item active" data-tab="ui">UI Design</div>
+        <div class="tab-item" data-tab="web">Web Design</div>
+        <div class="tab-item" data-tab="edit">Edit. Design</div>
+        <a class="tab-item" href="#">See More</a>
       </div>
 
       <!-- display info depends on clicked tab -->
       <div class="portfolio-display-container" id="portfolio-display-container">
-        <div class="portfolio-card">
-          <div class="portfolio-card-info">
-            <div class="portfolio-card-info-title">
-              <p>COVID19 Information App</p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="feather feather-external-link"
-              >
-                <path
-                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
-                ></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
-            </div>
-
-            <p class="portfolio-card-info-subtitle">
-              Covid19 information mobile app.
-            </p>
-
-            <p class="portfolio-card-info-tool">
-              Adobe XD, Photoshop, Illustrator
-            </p>
-          </div>
-
-          <img src="./img/portfolio/coro-mockup.jpg" alt="portfolio image" />
-        </div>
+        <!-- PORTFOLIO CARDS INSIDE -->
       </div>
     </section>
 

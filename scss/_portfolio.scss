@@ -1,0 +1,118 @@
+#portfolio {
+  max-width: $desktop-width;
+  margin: $margin-c-b;
+  padding: $padding;
+
+  // select tab for gallary
+  .portfolio-tab-container {
+    color: $text;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 3.5rem;
+
+    @media screen and (max-width: $mobile-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 3rem;
+      justify-items: center;
+    }
+
+    .tab-item {
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+
+      &:hover {
+        color: $primary;
+      }
+
+      &.active {
+        border: 1px solid $primary;
+        border-radius: 2rem;
+        color: $primary;
+      }
+    }
+  }
+
+  // portfolio gallary display grid
+  .portfolio-display-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+
+    @media screen and (max-width: $tablet-big-width) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: $mobile-width) {
+      grid-template-columns: 1fr;
+    }
+
+    .portfolio-card {
+      background-color: $card;
+      padding: 1.25rem;
+      border-radius: $border-radius;
+      transition: background-color $transition;
+      // animation: fadeIn 1000ms;
+
+      &:hover {
+        background-color: lighten($card, 2%);
+      }
+
+      .portfolio-card-info {
+        &-title {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 1rem;
+          color: $primary;
+
+          svg.feather-external-link {
+            stroke: $text;
+            opacity: 0.5;
+            transition: opacity $transition;
+
+            &:hover {
+              stroke: $primary;
+              opacity: 1;
+            }
+          }
+        }
+
+        &-subtitle {
+          margin-bottom: 0.3rem;
+          color: $text;
+          font-size: 0.875rem;
+        }
+
+        &-tool {
+          margin-bottom: 1rem;
+          color: $text;
+          font-size: 0.75rem;
+          opacity: 0.5;
+        }
+      }
+
+      &-img {
+        width: 100%;
+        height: 15.625rem;
+        border-radius: $border-radius;
+        object-fit: cover;
+
+        @media screen and (max-width: $mobile-width) {
+          height: auto;
+          max-height: 28.75rem;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
