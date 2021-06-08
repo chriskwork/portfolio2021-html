@@ -1,0 +1,47 @@
+#what-i-do {
+  max-width: $desktop-width;
+  margin: $margin-c-b;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: $text-c;
+
+    &-icon {
+      width: 5rem;
+      height: 6rem;
+
+      img {
+        width: 100%;
+        max-height: 5rem;
+      }
+    }
+
+    &-title {
+      color: $title;
+      margin-bottom: 1rem;
+    }
+
+    &-desc {
+      color: $text;
+      font-size: 0.75rem;
+    }
+  }
+
+  @media screen and (max-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5rem;
+  }
+
+  @media screen and (max-width: $mobile-width) {
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+  }
+}

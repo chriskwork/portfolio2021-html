@@ -53,6 +53,7 @@ header {
   margin: 0 auto;
   padding: 0 1.25rem;
   background-color: #0b132d;
+  z-index: 98;
 }
 
 #logo {
@@ -292,7 +293,7 @@ header {
   color: #9ca8c8;
   font-size: 0.875rem;
   max-width: 1256px;
-  margin: 0 auto 6.25rem auto;
+  margin: 0 auto 10rem auto;
   position: relative;
 }
 
@@ -315,6 +316,47 @@ header {
   border-radius: 50%;
 }
 
+#about .profile-textBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#about .profile-textBox .download-btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about .profile-textBox .download-btn-container .download-cv {
+  color: #ef6e6e;
+  font-size: 1rem;
+  -webkit-transition: color 250ms;
+  transition: color 250ms;
+}
+
+#about .profile-textBox .download-btn-container .download-cv:hover {
+  color: #fff;
+}
+
+#about .profile-textBox .download-btn-container .download-icon {
+  width: 1.25rem;
+  margin-right: 0.625rem;
+}
+
 @media screen and (max-width: 760px) {
   #about .profile {
     -webkit-box-orient: vertical;
@@ -322,6 +364,11 @@ header {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+  }
+  #about .profile .download-btn-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -342,4 +389,69 @@ header {
   width: 5rem;
   bottom: 0;
   right: 0;
+}
+
+#what-i-do {
+  max-width: 1256px;
+  margin: 0 auto 10rem auto;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.grid-container .card-icon {
+  width: 5rem;
+  height: 6rem;
+}
+
+.grid-container .card-icon img {
+  width: 100%;
+  max-height: 5rem;
+}
+
+.grid-container .card-title {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.grid-container .card-desc {
+  color: #9ca8c8;
+  font-size: 0.75rem;
+}
+
+@media screen and (max-width: 960px) {
+  .grid-container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    row-gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .grid-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    row-gap: 5rem;
+  }
 }
