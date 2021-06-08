@@ -85,50 +85,52 @@
       <img src="./img/intro-me-final.svg" alt="Intro image" />
     </div>
 
-    <!-- ######## section title ######## -->
-    <div class="section-title">
-      <div class="section-title-deco">
-        <div class="deco-before"></div>
-        <h1 class="section-name">About Me</h1>
-        <div class="deco-after"></div>
+    <div class="full-width-wrapper">
+      <!-- ######## section title ######## -->
+      <div class="section-title">
+        <div class="section-title-deco">
+          <div class="deco-before"></div>
+          <h1 class="section-name">About Me</h1>
+          <div class="deco-after"></div>
+        </div>
+        <p class="section-subtitle">Lorem ipsum dolor sit amet Lorem, ipsum.</p>
       </div>
-      <p class="section-subtitle">Lorem ipsum dolor sit amet Lorem, ipsum.</p>
-    </div>
 
-    <!-- ######## about me ######## -->
-    <section id="about">
-      <img
-        class="deco-image deco-image-wave"
-        src="./img/wave1.svg"
-        alt="decoration image"
-      />
-      <div class="profile">
-        <img src="./img/me.jpg" alt="profile photo" />
+      <!-- ######## about me ######## -->
+      <section id="about">
+        <img
+          class="deco-image deco-image-wave"
+          src="./img/wave1.svg"
+          alt="decoration image"
+        />
+        <div class="profile">
+          <img src="./img/me.jpg" alt="profile photo" />
 
-        <div class="profile-textBox">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Necessitatibus iure corrupti dolorum explicabo repellendus
-            obcaecati? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Veritatis, quas!
-          </p>
-          <br />
-          <div class="download-btn-container">
-            <img
-              class="download-icon"
-              src="./img/download.svg"
-              alt="download icon"
-            />
-            <a href="#" class="download-cv">Download CV</a>
+          <div class="profile-textBox">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Necessitatibus iure corrupti dolorum explicabo repellendus
+              obcaecati? Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Veritatis, quas!
+            </p>
+            <br />
+            <div class="download-btn-container">
+              <img
+                class="download-icon"
+                src="./img/download.svg"
+                alt="download icon"
+              />
+              <a href="#" class="download-cv">Download CV</a>
+            </div>
           </div>
         </div>
-      </div>
-      <img
-        class="deco-image deco-image-dot"
-        src="./img/dots-sm.svg"
-        alt="decoration image"
-      />
-    </section>
+        <img
+          class="deco-image deco-image-dot"
+          src="./img/dots-sm.svg"
+          alt="decoration image"
+        />
+      </section>
+    </div>
 
     <!-- ######## what i do ######## -->
 
@@ -187,5 +189,69 @@
         </div>
       </div>
     </section>
+
+    <!-- ######## portfolio ######## -->
+
+    <!-- ######## section title ######## -->
+    <div class="section-title">
+      <div class="section-title-deco">
+        <div class="deco-before"></div>
+        <h1 class="section-name">Portfolio</h1>
+        <div class="deco-after"></div>
+      </div>
+      <p class="section-subtitle">Some of my distinguished works.</p>
+    </div>
+
+    <!-- portfolio tab container -->
+    <section id="portfolio">
+      <!-- tab button container -->
+      <div class="portfolio-tab-container" id="portfolio-tab-container">
+        <div class="tab-item">UI Design</div>
+        <div class="tab-item">Web Design</div>
+        <div class="tab-item">Edit. Design</div>
+        <div class="tab-item">See More</div>
+      </div>
+
+      <!-- display info depends on clicked tab -->
+      <div class="portfolio-display-container" id="portfolio-display-container">
+        <div class="portfolio-card">
+          <div class="portfolio-card-info">
+            <div class="portfolio-card-info-title">
+              <p>COVID19 Information App</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-external-link"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </div>
+
+            <p class="portfolio-card-info-subtitle">
+              Covid19 information mobile app.
+            </p>
+
+            <p class="portfolio-card-info-tool">
+              Adobe XD, Photoshop, Illustrator
+            </p>
+          </div>
+
+          <img src="./img/portfolio/coro-mockup.jpg" alt="portfolio image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- body ends ############# -->
   </body>
 </html>
