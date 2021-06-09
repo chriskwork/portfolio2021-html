@@ -627,3 +627,117 @@ header {
     opacity: 1;
   }
 }
+
+#contact {
+  max-width: 1256px;
+  margin: 0 auto 8.75rem auto;
+  padding: 0 1.25rem;
+}
+
+#contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 0.625rem;
+}
+
+#contact form .contact-input,
+#contact form .submit-btn {
+  width: 55%;
+}
+
+@media screen and (max-width: 1024px) {
+  #contact form .contact-input,
+  #contact form .submit-btn {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  #contact form .contact-input,
+  #contact form .submit-btn {
+    width: 100%;
+  }
+}
+
+#contact form .contact-input {
+  border: 1px solid #9ca8c848;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  background-color: #080e21;
+  opacity: 0.95;
+  color: #fff;
+  -webkit-transition: border 250ms;
+  transition: border 250ms;
+  font-family: 'Poppins', sans-serif;
+}
+
+#contact form .contact-input::-webkit-input-placeholder {
+  opacity: 0.5;
+  color: #9ca8c8;
+}
+
+#contact form .contact-input:-ms-input-placeholder {
+  opacity: 0.5;
+  color: #9ca8c8;
+}
+
+#contact form .contact-input::-ms-input-placeholder {
+  opacity: 0.5;
+  color: #9ca8c8;
+}
+
+#contact form .contact-input::placeholder {
+  opacity: 0.5;
+  color: #9ca8c8;
+}
+
+#contact form .contact-input:focus {
+  border: 1px solid #9ca8c8;
+}
+
+#contact form textarea {
+  resize: vertical;
+  min-height: 10rem;
+  max-height: 20rem;
+}
+
+#contact form button.submit-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.75rem 2rem;
+  color: #0b132d;
+  background-color: #9ca8c8;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  opacity: 0.75;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
+}
+
+#contact form button.submit-btn:hover {
+  opacity: 1;
+}
+
+#contact form button.submit-btn img {
+  width: 1rem;
+  opacity: 0.9;
+}

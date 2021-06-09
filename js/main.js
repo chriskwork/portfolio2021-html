@@ -1,4 +1,7 @@
-// mobile hamburger menu slide
+/* ########################### 
+Header - mobile hamburger menu slide
+########################### */
+
 const mobileMenuOpenBtn = document.querySelector('#mobile-menu-open')
 const mobileMenuCloseBtn = document.querySelector('#mobile-menu-close')
 const mobileMenu = document.querySelector('#mobile-nav')
@@ -29,3 +32,11 @@ if (mobileMenuOpenBtn) {
 if (mobileMenuCloseBtn) {
   mobileMenuCloseBtn.addEventListener('click', mobileMenuClose)
 }
+
+/* ########################### 
+Contact - form validation
+########################### */
+
+/* ########################### 
+Contact - emailjs
+########################### */

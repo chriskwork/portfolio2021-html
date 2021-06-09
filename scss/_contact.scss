@@ -1,0 +1,76 @@
+#contact {
+  max-width: $desktop-width;
+  margin: $margin-c-b;
+  padding: $padding;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 0.625rem;
+
+    .contact-input,
+    .submit-btn {
+      width: 55%;
+
+      @media screen and (max-width: $tablet-big-width) {
+        width: 70%;
+      }
+
+      @media screen and (max-width: $mobile-width) {
+        width: 100%;
+      }
+    }
+
+    .contact-input {
+      border: 1px solid #9ca8c848;
+      border-radius: $border-radius;
+      padding: 0.75rem;
+      background-color: $section-dark;
+      opacity: 0.95;
+      color: $title;
+      transition: border $transition;
+      font-family: 'Poppins', sans-serif;
+
+      &::placeholder {
+        opacity: 0.5;
+        color: $text;
+      }
+
+      &:focus {
+        border: 1px solid $text;
+      }
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 10rem;
+      max-height: 20rem;
+    }
+
+    button.submit-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // margin-left: auto;
+      padding: 0.75rem 2rem;
+      color: $bg;
+      background-color: $text;
+      border: none;
+      border-radius: $border-radius;
+      cursor: pointer;
+      opacity: 0.75;
+      transition: opacity $transition;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      img {
+        width: 1rem;
+        opacity: 0.9;
+      }
+    }
+  }
+}
