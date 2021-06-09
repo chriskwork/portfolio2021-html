@@ -1,4 +1,4 @@
-#contact {
+.contact {
   max-width: $desktop-width;
   margin: $margin-c-b;
   padding: $padding;
@@ -24,14 +24,13 @@
     }
 
     .contact-input {
-      border: 1px solid #9ca8c848;
+      border: 1px solid $text-low-opacity;
       border-radius: $border-radius;
       padding: 0.75rem;
       background-color: $section-dark;
       opacity: 0.95;
       color: $title;
       transition: border $transition;
-      font-family: 'Poppins', sans-serif;
 
       &::placeholder {
         opacity: 0.5;
@@ -53,7 +52,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      // margin-left: auto;
+      // margin-left: auto; (putting on right-end only this item)
       padding: 0.75rem 2rem;
       color: $bg;
       background-color: $text;

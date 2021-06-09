@@ -5,6 +5,7 @@ $bg: #0b132d;
 $title: #fff;
 $text: #9ca8c8;
 $text-dark: #6b748b;
+$text-low-opacity: #79797948;
 $primary: #ef6e6e;
 $section-dark: #080e21;
 $card: #151c34;
@@ -45,10 +46,7 @@ $font-m: 1rem;
 
 html {
   font-size: 100%;
-
-  // @media (max-width: $tablet-big-width) {
-  //   font-size: 90%;
-  // }
+  scroll-behavior: smooth;
 }
 
 body {
@@ -73,7 +71,13 @@ h1 {
   width: 100%;
   height: 100%;
   background-color: $section-dark;
-  padding: 5rem 0;
-  margin-bottom: 8.75rem;
+  padding: 5rem;
+  // margin-bottom: 8.75rem;
   z-index: -2;
+}
+
+button,
+input,
+textarea {
+  font-family: 'Poppins', sans-serif;
 }

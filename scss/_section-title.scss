@@ -3,8 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  margin-top: 8.75rem;
   margin-bottom: 3.25rem;
+
+  &.section-title-about {
+    margin-top: 0;
+  }
 
   &-deco {
     display: flex;
