@@ -6,7 +6,7 @@ const uiData = [
     link: '#',
     subtitle: 'Web page for studying spanish.',
     tools: 'Adobe XD, Illustrator, React, Scss',
-    img: '../img/portfolio/pre-quiz-app.jpg',
+    img: './img/portfolio/pre-quiz-app.jpg',
   },
   {
     id: '20200815',
@@ -15,7 +15,7 @@ const uiData = [
     link: '#',
     subtitle: 'Travel information of Spain.',
     tools: 'Adobe XD, Photoshop, Illustrator',
-    img: '../img/portfolio/travel-spain-mockup.jpg',
+    img: './img/portfolio/travel-spain-mockup.jpg',
   },
   {
     id: '20200616',
@@ -24,7 +24,7 @@ const uiData = [
     link: '#',
     subtitle: 'C-virus information mobile app.',
     tools: 'Adobe XD, Photoshop, Illustrator',
-    img: '../img/portfolio/coro-mockup.jpg',
+    img: './img/portfolio/coro-mockup.jpg',
   },
 ]
 
@@ -36,7 +36,7 @@ const webData = [
     link: '#',
     subtitle: 'Web page for studying spanish.',
     tools: 'Adobe XD, Illustrator, React, Scss',
-    img: '../img/portfolio/pre-quiz-app.jpg',
+    img: './img/portfolio/pre-quiz-app.jpg',
   },
   {
     id: '20201001',
@@ -45,7 +45,7 @@ const webData = [
     link: '#',
     subtitle: 'Landing page(virtual company)',
     tools: 'HTML, CSS, JS',
-    img: '../img/portfolio/easybank-mockup.jpg',
+    img: './img/portfolio/easybank-mockup.jpg',
   },
   {
     id: '20200616',
@@ -54,7 +54,7 @@ const webData = [
     link: '#',
     subtitle: 'Design, Developing whole site(as trainee)',
     tools: 'Adobe XD, Photoshop, Illustrator, HTML, CSS, JS',
-    img: '../img/portfolio/moyo-mockup.jpg',
+    img: './img/portfolio/moyo-mockup.jpg',
   },
 ]
 
@@ -66,6 +66,6 @@ const editData = [
     link: '#',
     subtitle: 'Some Design Works',
     tools: 'Indesign, Photoshop, Illustrator',
-    img: '../img/portfolio/mockup-print-set-work.jpg',
+    img: './img/portfolio/mockup-print-set-work.jpg',
   },
 ]
