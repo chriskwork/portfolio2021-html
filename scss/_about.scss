@@ -35,10 +35,20 @@
         justify-content: flex-start;
         align-items: center;
 
+        span.slash {
+          margin: 0 0.5rem;
+          font-size: 0.5rem;
+          color: $primary;
+        }
+
         .download-cv {
           color: $primary;
           font-size: 1rem;
           transition: color $transition;
+
+          span {
+            font-size: 0.75rem;
+          }
 
           &:hover {
             color: $title;

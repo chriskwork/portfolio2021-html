@@ -19,14 +19,15 @@ section.what-i-do {
       height: 6rem;
 
       &.size-m {
-        width: 4.2rem;
+        width: 3.8rem;
       }
 
       &.size-sm {
-        width: 4rem;
+        width: 3.5rem;
       }
 
-      @media screen and (max-width: $tablet-big-width) {
+      &.size-sm.thumbs-up {
+        width: 3.3rem;
       }
 
       img {

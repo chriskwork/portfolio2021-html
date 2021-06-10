@@ -371,11 +371,21 @@ header {
           align-items: center;
 }
 
+.about .profile-textBox .download-btn-container span.slash {
+  margin: 0 0.5rem;
+  font-size: 0.5rem;
+  color: #ef6e6e;
+}
+
 .about .profile-textBox .download-btn-container .download-cv {
   color: #ef6e6e;
   font-size: 1rem;
   -webkit-transition: color 250ms;
   transition: color 250ms;
+}
+
+.about .profile-textBox .download-btn-container .download-cv span {
+  font-size: 0.75rem;
 }
 
 .about .profile-textBox .download-btn-container .download-cv:hover {
@@ -455,11 +465,15 @@ section.what-i-do {
 }
 
 .grid-container .card-icon.size-m {
-  width: 4.2rem;
+  width: 3.8rem;
 }
 
 .grid-container .card-icon.size-sm {
-  width: 4rem;
+  width: 3.5rem;
+}
+
+.grid-container .card-icon.size-sm.thumbs-up {
+  width: 3.3rem;
 }
 
 .grid-container .card-icon img {
