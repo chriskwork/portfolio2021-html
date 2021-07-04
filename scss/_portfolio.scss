@@ -53,6 +53,9 @@ section.portfolio {
     }
 
     .portfolio-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       background-color: $card;
       padding: 1.25rem;
       border-radius: $border-radius;
