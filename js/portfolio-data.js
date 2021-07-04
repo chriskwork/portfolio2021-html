@@ -1,13 +1,13 @@
 const uiData = [
-  {
-    id: '20210410',
-    tab: 'ui',
-    title: 'Spanish Study Site',
-    link: '#',
-    subtitle: 'Web page for studying spanish.',
-    tools: 'Adobe XD, Illustrator, React, Scss',
-    img: './img/portfolio/pre-quiz-app.jpg',
-  },
+  // {
+  //   id: '20210410',
+  //   tab: 'ui',
+  //   title: 'Spanish Study Site',
+  //   link: '#',
+  //   subtitle: 'Web page for studying spanish.',
+  //   tools: 'Adobe XD, Illustrator, React, Scss',
+  //   img: './img/portfolio/pre-quiz-app.jpg',
+  // },
   {
     id: '20200815',
     tab: 'ui',
