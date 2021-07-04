@@ -26,23 +26,23 @@ const uiData = [
     tools: 'Adobe XD, Photoshop, Illustrator',
     img: './img/portfolio/coro-mockup.jpg',
   },
-]
+];
 
 const webData = [
   {
     id: '20210410',
     tab: 'web',
-    title: 'Spanish Study Web Page',
-    link: '#',
-    subtitle: 'Web page for studying spanish.',
-    tools: 'Adobe XD, Illustrator, React, Scss',
+    title: 'Spanish Study App',
+    link: 'https://pre-quiz.vercel.app/',
+    subtitle: 'Learning spanish preposition with quiz.',
+    tools: 'Adobe XD, React, Styled Component',
     img: './img/portfolio/pre-quiz-app.jpg',
   },
   {
     id: '20201001',
     tab: 'web',
     title: 'Easybank Landing Page',
-    link: '#',
+    link: 'https://chriskwork.github.io/easy-bank-landing-page/',
     subtitle: 'Landing page(virtual company)',
     tools: 'HTML, CSS, JS',
     img: './img/portfolio/easybank-mockup.jpg',
@@ -51,12 +51,12 @@ const webData = [
     id: '20200616',
     tab: 'web',
     title: 'Front-end Development',
-    link: '#',
-    subtitle: 'Design, Developing whole site(as trainee)',
-    tools: 'Adobe XD, Photoshop, Illustrator, HTML, CSS, JS',
+    link: 'https://chriskwork.github.io/project-moyo/',
+    subtitle: 'Developed landing, dashboard pages (trainee)',
+    tools: 'Adobe XD, Illustrator, HTML, CSS, JS',
     img: './img/portfolio/moyo-mockup.jpg',
   },
-]
+];
 
 const editData = [
   {
@@ -68,4 +68,4 @@ const editData = [
     tools: 'Indesign, Photoshop, Illustrator',
     img: './img/portfolio/mockup-print-set-work.jpg',
   },
-]
+];

@@ -19,33 +19,33 @@
       src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
     ></script>
     <script type="text/javascript">
-      ;(function () {
-        emailjs.init('user_0fV72PyuS913evFWOm7uC')
-      })()
+      (function () {
+        emailjs.init('user_0fV72PyuS913evFWOm7uC');
+      })();
     </script>
     <script type="text/javascript">
       window.onload = function () {
-        const contactForm = document.querySelector('#contact-form')
-        const formBoxes = contactForm.querySelectorAll('.contact-input')
+        const contactForm = document.querySelector('#contact-form');
+        const formBoxes = contactForm.querySelectorAll('.contact-input');
 
         contactForm.addEventListener('submit', function (event) {
-          event.preventDefault()
+          event.preventDefault();
           // generate a five digit number for the contact_number variable
-          this.contact_number.value = (Math.random() * 100000) | 0
+          this.contact_number.value = (Math.random() * 100000) | 0;
           // these IDs from the previous steps
           emailjs.sendForm('service_0qg5mxf', 'template_wmzhfca', this).then(
             function () {
-              console.log('SUCCESS!')
-              alert('Thank you for sending an email!')
+              console.log('SUCCESS!');
+              alert('Thank you for sending an email!');
             },
             function (error) {
-              console.log('FAILED...', error)
+              console.log('FAILED...', error);
             }
-          )
+          );
 
-          formBoxes.forEach((box) => (box.value = ''))
-        })
-      }
+          formBoxes.forEach((box) => (box.value = ''));
+        });
+      };
     </script>
 
     <title>Yohan Kim | Portfolio Page</title>
@@ -279,7 +279,7 @@
       <!-- tab button container -->
       <div class="portfolio-tab-container" id="portfolio-tab-container">
         <div class="tab-item active" data-tab="ui">UI Design</div>
-        <div class="tab-item" data-tab="web">Web Design</div>
+        <div class="tab-item" data-tab="web">Web Dev.</div>
         <div class="tab-item" data-tab="edit">Edit. Design</div>
         <a class="tab-item" href="#">See More</a>
       </div>
@@ -356,7 +356,8 @@
         <div class="footer-logo">
           Yohan Kim &copy; <span id="year"></span>
           <script>
-            document.getElementById('year').innerHTML = new Date().getFullYear()
+            document.getElementById('year').innerHTML =
+              new Date().getFullYear();
           </script>
         </div>
         <div class="social-container">
