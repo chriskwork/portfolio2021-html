@@ -461,24 +461,35 @@ section.what-i-do {
 }
 
 .grid-container .card-icon {
-  height: 6rem;
-}
-
-.grid-container .card-icon.size-m {
-  width: 3.8rem;
-}
-
-.grid-container .card-icon.size-sm {
-  width: 3.5rem;
-}
-
-.grid-container .card-icon.size-sm.thumbs-up {
-  width: 3.3rem;
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+  background-color: #ef6e6e;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .grid-container .card-icon img {
-  width: 100%;
-  max-height: 5rem;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.grid-container .card-icon img.code {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.grid-container .card-icon img.thumbs-up {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .grid-container .card-title {
