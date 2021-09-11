@@ -12,7 +12,7 @@ const uiData = [
     id: '20200815',
     tab: 'ui',
     title: 'Travel Spain App',
-    link: '#',
+    link: 'https://www.behance.net/gallery/123168317/Travel-Information-App',
     subtitle: 'Travel information of Spain.',
     tools: 'Adobe XD, Photoshop, Illustrator',
     img: './img/portfolio/travel-spain-mockup.jpg',
