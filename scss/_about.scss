@@ -82,6 +82,11 @@
   width: 10rem;
   top: 0;
   left: 0;
+
+  @media screen and (max-width: $mobile-width) {
+    opacity: 0.2;
+    left: 1rem;
+  }
 }
 
 .deco-image-dot {
@@ -89,4 +94,9 @@
   width: 5rem;
   bottom: 0;
   right: 0;
+
+  @media screen and (max-width: $mobile-width) {
+    bottom: -5rem;
+    opacity: 0.15;
+  }
 }

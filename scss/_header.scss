@@ -65,6 +65,7 @@ header {
     right: 0;
     width: 0;
     height: 0;
+    transform: scale(0);
     padding: 6.25rem 0;
     pointer-events: none;
 
@@ -84,11 +85,11 @@ header {
     }
 
     &.opened {
-      width: 18.75rem;
+      width: 100vw;
       height: 100vh;
-      position: fixed;
-      top: 0;
-      right: 0;
+      // position: fixed;
+      transform: scale(1);
+      transform-origin: top right;
       pointer-events: all;
 
       & .feather-x {
